@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantum Particle Interaction Visualization</title>
+  <style>
+    /* Basic reset for the page */
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Information overlay shown on top of the canvas */
+    #info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      max-width: 320px;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 12px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #info h2 {
+      margin: 0 0 8px 0;
+      font-size: 1.2em;
+    }
+
+    #info p {
+      margin: 0;
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <!-- Informational text explaining the simulation -->
+  <div id="info">
+    <h2>Quantum Particle Interaction Visualization</h2>
+    <p>
+      This visualization simulates a small collection of "quantum" particles
+      interacting with one another. Each particle has a positive (red) or
+      negative (blue) charge, and forces between them are calculated using a
+      simple Coulomb‑like law. When particles attract or repel, the lines
+      connecting them illustrate the invisible exchange of force‑carrier
+      bosons. The simulation is not a rigorous quantum calculation but an
+      educational representation of how particles interact at the
+      subatomic level.
+    </p>
+  </div>
+
+  <!-- Load the p5.js library from a CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <!-- Load our custom simulation code -->
+  <script src="quantum_sim.js"></script>
+</body>
+</html>
